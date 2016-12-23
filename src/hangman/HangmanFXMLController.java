@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class HangmanFXMLController implements Initializable {
+    Game game = new Game();
 
     @FXML
     private Label categoryLabel;
@@ -17,12 +18,16 @@ public class HangmanFXMLController implements Initializable {
 
     @FXML
     void startGame(ActionEvent event) {
-
+        game.randomPhrase();
+        toGuessLabel.setText(game.getIncompletePhrase());
+        categoryLabel.setText("Kategoria: " + game.getCategory());
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+    
+    
 
 }

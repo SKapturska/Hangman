@@ -10,7 +10,7 @@ public class Hangman extends Application{
 
     public static void main(String[] args) {
        Application.launch(args);
-       SingletonConnection singletonConnection = SingletonConnection.getInstance();
+       
     }
 
     @Override
