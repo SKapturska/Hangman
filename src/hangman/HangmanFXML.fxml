@@ -42,40 +42,40 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="aButton" mnemonicParsing="false" prefHeight="73.0" prefWidth="106.0" text="A" />
-            <Button fx:id="ąButton" mnemonicParsing="false" prefHeight="66.0" prefWidth="129.0" text="Ą" GridPane.columnIndex="1" />
-            <Button fx:id="bButton" mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" text="B" GridPane.columnIndex="2" />
-            <Button fx:id="cButton" mnemonicParsing="false" prefHeight="61.0" prefWidth="133.0" text="C" GridPane.columnIndex="3" />
-            <Button fx:id="ćButton" mnemonicParsing="false" prefHeight="72.0" prefWidth="131.0" text="Ć" GridPane.columnIndex="4" />
-            <Button fx:id="dButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="129.0" text="D" GridPane.columnIndex="5" />
-            <Button fx:id="eButton" mnemonicParsing="false" prefHeight="74.0" prefWidth="109.0" text="E" GridPane.columnIndex="6" />
-            <Button fx:id="ęButton" mnemonicParsing="false" prefHeight="82.0" prefWidth="128.0" text="Ę" GridPane.columnIndex="7" />
-            <Button fx:id="fButton" mnemonicParsing="false" prefHeight="63.0" prefWidth="105.0" text="F" GridPane.columnIndex="8" />
-            <Button fx:id="gButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="122.0" text="G" GridPane.columnIndex="9" />
-            <Button fx:id="hButton" mnemonicParsing="false" prefHeight="61.0" prefWidth="128.0" text="H" GridPane.columnIndex="10" />
-            <Button fx:id="iButton" mnemonicParsing="false" prefHeight="67.0" prefWidth="163.0" text="I" GridPane.rowIndex="1" />
-            <Button fx:id="jButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="124.0" text="J" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="kButton" mnemonicParsing="false" prefHeight="81.0" prefWidth="109.0" text="K" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="lButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="104.0" text="L" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="łButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="117.0" text="Ł" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="mButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="109.0" text="M" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button fx:id="nButton" mnemonicParsing="false" prefHeight="62.0" prefWidth="83.0" text="N" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button fx:id="ńButton" mnemonicParsing="false" prefHeight="92.0" prefWidth="160.0" text="Ń" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Button fx:id="oButton" mnemonicParsing="false" prefHeight="84.0" prefWidth="137.0" text="O" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button fx:id="óButton" mnemonicParsing="false" prefHeight="88.0" prefWidth="173.0" text="Ó" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button fx:id="pButton" mnemonicParsing="false" prefHeight="65.0" prefWidth="117.0" text="P" GridPane.columnIndex="10" GridPane.rowIndex="1" />
-            <Button fx:id="rButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="93.0" text="R" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="sButton" mnemonicParsing="false" prefHeight="72.0" prefWidth="109.0" text="S" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button fx:id="śButton" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" text="Ś" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button fx:id="tButton" mnemonicParsing="false" prefHeight="82.0" prefWidth="104.0" text="T" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Button fx:id="uButton" mnemonicParsing="false" prefHeight="65.0" prefWidth="95.0" text="U" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Button fx:id="vButton" mnemonicParsing="false" prefHeight="64.0" prefWidth="81.0" text="V" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Button fx:id="wButton" mnemonicParsing="false" prefHeight="79.0" prefWidth="128.0" text="W" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="X" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="xButton" />
-            <Button fx:id="yButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="91.0" text="Y" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button fx:id="zButton" mnemonicParsing="false" prefHeight="68.0" prefWidth="108.0" text="Z" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Button fx:id="źButton" mnemonicParsing="false" prefHeight="67.0" prefWidth="130.0" text="Ź" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Button fx:id="żButton" mnemonicParsing="false" prefHeight="58.0" prefWidth="101.0" text="Ż" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button fx:id="aButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="73.0" prefWidth="106.0" text="A" />
+            <Button fx:id="ąButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="66.0" prefWidth="129.0" text="Ą" GridPane.columnIndex="1" />
+            <Button fx:id="bButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="59.0" prefWidth="111.0" text="B" GridPane.columnIndex="2" />
+            <Button fx:id="cButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="61.0" prefWidth="133.0" text="C" GridPane.columnIndex="3" />
+            <Button fx:id="ćButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="72.0" prefWidth="131.0" text="Ć" GridPane.columnIndex="4" />
+            <Button fx:id="dButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="54.0" prefWidth="129.0" text="D" GridPane.columnIndex="5" />
+            <Button fx:id="eButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="74.0" prefWidth="109.0" text="E" GridPane.columnIndex="6" />
+            <Button fx:id="ęButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="82.0" prefWidth="128.0" text="Ę" GridPane.columnIndex="7" />
+            <Button fx:id="fButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="63.0" prefWidth="105.0" text="F" GridPane.columnIndex="8" />
+            <Button fx:id="gButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="64.0" prefWidth="122.0" text="G" GridPane.columnIndex="9" />
+            <Button fx:id="hButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="61.0" prefWidth="128.0" text="H" GridPane.columnIndex="10" />
+            <Button fx:id="iButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="67.0" prefWidth="163.0" text="I" GridPane.rowIndex="1" />
+            <Button fx:id="jButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="64.0" prefWidth="124.0" text="J" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="kButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="81.0" prefWidth="109.0" text="K" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="lButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="60.0" prefWidth="104.0" text="L" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="łButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="54.0" prefWidth="117.0" text="Ł" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="mButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="54.0" prefWidth="109.0" text="M" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="nButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="62.0" prefWidth="83.0" text="N" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="ńButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="92.0" prefWidth="160.0" text="Ń" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="oButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="84.0" prefWidth="137.0" text="O" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="óButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="88.0" prefWidth="173.0" text="Ó" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button fx:id="pButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="65.0" prefWidth="117.0" text="P" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <Button fx:id="rButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="64.0" prefWidth="93.0" text="R" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="sButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="72.0" prefWidth="109.0" text="S" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="śButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="75.0" prefWidth="115.0" text="Ś" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="tButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="82.0" prefWidth="104.0" text="T" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="uButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="65.0" prefWidth="95.0" text="U" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="vButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="64.0" prefWidth="81.0" text="V" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Button fx:id="wButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="79.0" prefWidth="128.0" text="W" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#letterPressed" prefHeight="50.0" prefWidth="80.0" text="X" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="xButton" />
+            <Button fx:id="yButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="60.0" prefWidth="91.0" text="Y" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="zButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="68.0" prefWidth="108.0" text="Z" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="źButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="67.0" prefWidth="130.0" text="Ź" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Button fx:id="żButton" mnemonicParsing="false" onAction="#letterPressed" prefHeight="58.0" prefWidth="101.0" text="Ż" GridPane.columnIndex="6" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
