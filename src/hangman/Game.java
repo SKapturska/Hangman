@@ -11,7 +11,11 @@ public class Game {
     private String category;
     private String incompletePhrase;
     private boolean [] isGuessed;
-    
+    private int error = 0;
+
+    public int getError() {
+        return error;
+    }
 
     public String getCategory() {
         return category;
@@ -34,23 +38,38 @@ public class Game {
         isGuessed = new boolean [phrase.length()];
     }
     
-    void createIncompletePhrase(){  
+    void createPhrase(boolean isPhrase){  
         incompletePhrase = "";
         for(int i = 0 ; i < isGuessed.length ; i++){
-            if(isGuessed[i] == false){
-                incompletePhrase += "_ ";
+            if(isGuessed[i] == false && !isPhrase){
+                incompletePhrase += "_  ";
             } else {
-                incompletePhrase += (phrase.charAt(i) + " ");
+                incompletePhrase += (phrase.charAt(i) + "  ");
             }
         }
     }
     
     void buttonPressed(char letter){
+        boolean isOk = false;
         for(int i = 0; i < phrase.length(); i++){
             if(phrase.charAt(i) == letter){
                 isGuessed[i] = true;
+                isOk = true;
             }
         }
+        if(!isOk){
+            error ++;
+        }
+    }
+    
+    boolean isWin(){
+        boolean isOk = false;      
+        for(int i = 0; i < isGuessed.length; i++){
+            if(isGuessed[i] == false){
+                isOk = true;
+            }
+        }
+        return isOk;
     }
 
 }
